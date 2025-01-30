@@ -12,6 +12,7 @@
 3. `docker compose exec app bash`
 4. `php artisan key:generate`
 5. `php artisan migrate:fresh --seed`
+6. `curl -XGET localhost:8000` (8000 - порт по умолчанию)
 
 ### Запуск тестов:
 
