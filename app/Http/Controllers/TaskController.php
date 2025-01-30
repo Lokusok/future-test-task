@@ -104,7 +104,7 @@ class TaskController extends Controller
     )]
     public function store(TaskStoreRequest $request)
     {
-        $task = Task::create($request->validated);
+        $task = Task::create($request->validated());
 
         return response()->json([
             'id' => $task->id,
